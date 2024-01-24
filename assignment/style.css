@@ -5,6 +5,7 @@
 /* Make your p tag a different color and italic */
 /* Put a border around your image */
 /* Change the font-family of your list */
+/* Add a background color to the footer element */
 
 html, body {
     margin: 0;
@@ -45,6 +46,9 @@ font-family: "Catamaran", sans-serif;
     margin-top: 0;
     margin-bottom: 0;
 }
+/* I changed the h1 from a normal header, to a div class, to an id, all in an attempt to erase the space on the top & bottom.
+For some reason this worked and I'm not entirely sure why.*/
+
 #foot {
     color: goldenrod;
     font-style: italic;
@@ -54,7 +58,9 @@ font-family: "Catamaran", sans-serif;
     margin-top: 0;
     margin-bottom: 0;
 }
-/* I changed the h1 from a normal header, to a div class, to an id, all in an attempt to erase the space on the top & bottom.
-For some reason this worked and I'm not entirely sure why.*/
+/* Here I tried to replicate what I did with the previous id, but there is still a gap between the main body and the footer. 
+Using developer tools doesn't help as it's hard to pinpoint which section the gap belongs to.
 
-/* Add a background color to the footer element */
+For some reason on the automatic tests it says I don't have a header & footer background color, is it because I referred to the id
+in css instead of the footer/header element?*/
+
