@@ -1,23 +1,60 @@
 /* Add a background color to the header element */
-header {
-    background-color: #ffa426;
-    text-align: center;
-}
 /* Add a fun background color to the main element */
+/* Align the h1 containing your name in the center of the header*/
+/* Align the h1 containing your name in the center of the header*/
+/* Make your p tag a different color and italic */
+/* Put a border around your image */
+/* Change the font-family of your list */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 main {
     background-color: #dcb7ff;
 }
-/* Align the h1 containing your name in the center of the header*/
 
-/* Make your p tag a different color and italic */
-p {
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width 40%;
+    border-style: double;
+    border-width: 10px;
+    border-color: grey;
+}
+/* I first tried centering the image using a div class around the image and center-aligning it, but that screwed up the border
+   Using a display:block fixes the problem for the most part?*/
+
+
+.listy {
+display:block;
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+font-size: 25px;
+font-family: "Catamaran", sans-serif;
+}
+
+#heading-one {
+    background-color: #ffa426;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#foot {
     color: goldenrod;
     font-style: italic;
     text-align: center;
     font-size: 40px;
+    background-color: #a8edff;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-/* Put a border around your image */
-
-/* Change the font-family of your list */
+/* I changed the h1 from a normal header, to a div class, to an id, all in an attempt to erase the space on the top & bottom.
+For some reason this worked and I'm not entirely sure why.*/
 
 /* Add a background color to the footer element */
